@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Spirequal;
+  src: url("fonts/spirequalLight/SPIREQ_L.TTF") format("opentype");
+}
+h1, h2, p {
+  font-family: Spirequal, serif;
+}
+h1 {
+  font-size: 36pt;
+}
+h1, h2 {
+  text-align: center;
+}
+#citation {
+  font-size: 12pt;
+  font-style: italic;
+}
+p {
+  font-size: 16pt;
+  text-align: center;
+  color: black;
+}
+.defined-word {
+  color: #606060;
+  font-weight: bold;
+}
+.defined-word:hover{
+  border: solid 1px lightgrey;
+}
+html {
+  background: #f2f2f2;
+}

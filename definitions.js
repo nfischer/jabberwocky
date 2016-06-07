@@ -63,4 +63,8 @@ var defs = {
   "beamish": "filled with happiness, optimism, or anticipation",
   "whiffling": "moving lightly as if blown by a puff of air",
   "galumphing": "moving in a clumsy, ponderous, or noisy manner.",
+  "burbled": [
+    "make a continuous murmuring noise.",
+    "speak in an unintelligible or silly way, typically at unnecessary length.",
+    ],
 }
