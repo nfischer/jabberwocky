@@ -23,6 +23,7 @@ p {
 .defined-word {
   color: #606060;
   font-weight: bold;
+  cursor: default;
 }
 .defined-word:hover{
   border: solid 1px lightgrey;
