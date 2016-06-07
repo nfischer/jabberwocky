@@ -6,4 +6,4 @@ Try it out at https://nfischer.github.io/jabberwocky/
 
 ## Contributing
 
-Feel free to contribute by adding alternate definitions in [definitions.js](src/definitions.js). This will display a randomized set of definitions each time!
+Feel free to contribute by adding alternate definitions in [definitions.js](definitions.js) (if there's only one definition currently, turn this into an array of definitions). This will display a randomized set of definitions each time!
