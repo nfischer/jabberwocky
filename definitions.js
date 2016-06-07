@@ -10,7 +10,7 @@ var defs = {
     "that time between twilight and pitch black, when it is just starting to get scary dark",
     ],
   "toves": [
-    "Something like badgers - they’re something like lizards - and they are something like corkscrews... They make their nests under sundials - also they live on cheese.",
+    "Something like badgers - they're something like lizards - and they are something like corkscrews... They make their nests under sundials - also they live on cheese.",
     "short, greasy reptiles",
     ],
   "gyre": [
@@ -30,7 +30,7 @@ var defs = {
     "flimsy, yet menacing",
     ],
   "borogoves": [
-    "A thin shabby-looking bird with its feathers sticking out all round — something like a live mop.",
+    "A thin shabby-looking bird with its feathers sticking out all round - something like a live mop.",
     "small animal that looks like an armadillo, with a pointy nose and soft skin",
     ],
   "mome": "I'm not certain about mome. I think it's short for 'from home' - meaning that they'd lost their way.",
