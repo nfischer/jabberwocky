@@ -2,7 +2,6 @@ var wordCounter = {};
 function advanceDefinition(arg) {
   var node = $(arg);
   var text = node.text().toLowerCase();
-  console.log(typeof defs[text]);
   if (defs[text] instanceof Array) {
     wordCounter[text] = (wordCounter[text] + 1) % defs[text].length;
     var newHint = defs[text][wordCounter[text]];
