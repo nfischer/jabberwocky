@@ -6,17 +6,19 @@ h1, h2, p {
   font-family: Spirequal, serif;
 }
 h1 {
-  font-size: 36pt;
+  font-size: 50pt;
+  text-align: center;
 }
-h1, h2 {
+h2 {
+  font-size: 30pt;
   text-align: center;
 }
 #citation {
-  font-size: 12pt;
+  font-size: 16pt;
   font-style: italic;
 }
 p {
-  font-size: 16pt;
+  font-size: 22pt;
   text-align: center;
   color: black;
 }
