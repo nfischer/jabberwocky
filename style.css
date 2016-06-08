@@ -27,7 +27,7 @@ p {
   font-weight: bold;
   cursor: default;
 }
-.defined-word:hover{
+.term:hover{
   border: solid 1px lightgrey;
 }
 html {
