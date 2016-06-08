@@ -2,7 +2,7 @@
   font-family: Spirequal;
   src: url("fonts/spirequalLight/SPIREQ_L.TTF") format("opentype");
 }
-h1, h2, p {
+h1, h2, p, table {
   font-family: Spirequal, serif;
 }
 h1 {
@@ -22,7 +22,7 @@ p {
   text-align: center;
   color: black;
 }
-.defined-word {
+.term {
   color: #606060;
   font-weight: bold;
   cursor: default;

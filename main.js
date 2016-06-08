@@ -9,13 +9,23 @@ function advanceDefinition(arg) {
   }
 }
 $(document).ready(function () {
+  // make all keys lowercase
+  for (var k in defs) {
+    if (defs.hasOwnProperty(k)) {
+      if (k !== k.toLowerCase()) {
+        defs[k.toLowerCase()] = defs[k];
+        delete defs[k];
+      }
+    }
+  }
 
-  $('span').each(function (a, b) {
+  // add in link hints
+  $('span.term').each(function (a, b) {
     var node = $(b);
     var text = node.text().toLowerCase();
-    node.attr('onclick', 'advanceDefinition(this)');
-    node.addClass('hint--bounce hint--bottom hint--medium defined-word');
     if (defs[text]) {
+      node.attr('onclick', 'advanceDefinition(this)');
+      node.addClass('hint--bounce hint--bottom hint--medium');
       wordCounter[text] = 0;
       if (typeof defs[text] === 'string') {
         node.attr('aria-label', defs[text]);
@@ -23,8 +33,6 @@ $(document).ready(function () {
         var arr = defs[text];
         node.attr('aria-label', arr[0]);
       }
-    } else {
-      node.attr('aria-label', 'Not yet defined');
     }
   });
 });
