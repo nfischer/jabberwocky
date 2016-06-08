@@ -29,6 +29,8 @@ p {
 }
 .term:hover{
   border: solid 1px lightgrey;
+  border-radius: 3px;
+  font-size: 23pt;
 }
 html {
   background: #f2f2f2;
