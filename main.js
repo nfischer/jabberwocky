@@ -1,10 +1,11 @@
-var wordCounter = {};
 function advanceDefinition(arg) {
   var node = $(arg);
   var text = node.text().toLowerCase();
   if (defs[text] instanceof Array) {
-    wordCounter[text] = (wordCounter[text] + 1) % defs[text].length;
-    var newHint = defs[text][wordCounter[text]];
+    var count = parseInt(node.attr('data-count'));
+    count = (count + 1) % defs[text].length;
+    var newHint = defs[text][count];
+    node.attr('data-count', String(count));
     node.attr('aria-label', newHint);
   }
 }
@@ -26,7 +27,7 @@ $(document).ready(function () {
     if (defs[text]) {
       node.attr('onclick', 'advanceDefinition(this)');
       node.addClass('hint--bounce hint--bottom hint--medium');
-      wordCounter[text] = 0;
+      node.attr('data-count', '0');
       if (typeof defs[text] === 'string') {
         node.attr('aria-label', defs[text]);
       } else {
