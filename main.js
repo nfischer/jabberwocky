@@ -1,3 +1,4 @@
+var rightArrow = ' \u21AA';
 function advanceDefinition(arg) {
   'use strict';
   var node = $(arg);
@@ -7,7 +8,7 @@ function advanceDefinition(arg) {
     count = (count + 1) % defs[text].length;
     var newHint = defs[text][count];
     node.attr('data-count', String(count));
-    node.attr('aria-label', newHint);
+    node.attr('aria-label', newHint + rightArrow);
   }
 }
 $(document).ready(function () {
@@ -22,7 +23,7 @@ $(document).ready(function () {
     }
   }
 
-  // add in link hints
+  // add in initial hints
   $('span.term').each(function (a, b) {
     var node = $(b);
     var text = node.text().toLowerCase();
@@ -30,11 +31,10 @@ $(document).ready(function () {
       node.attr('onclick', 'advanceDefinition(this)');
       node.addClass('hint--bounce hint--bottom hint--medium');
       node.attr('data-count', '0');
-      if (typeof defs[text] === 'string') {
-        node.attr('aria-label', defs[text]);
+      if (defs[text] instanceof Array) {
+        node.attr('aria-label', defs[text][0] + rightArrow);
       } else {
-        var arr = defs[text];
-        node.attr('aria-label', arr[0]);
+        node.attr('aria-label', defs[text]);
       }
     }
   });
