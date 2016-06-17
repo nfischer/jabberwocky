@@ -1,5 +1,3 @@
-'use strict';
-
 var defs = {
   "word": [
     "This is the first definition of the word.",
@@ -8,4 +6,4 @@ var defs = {
   "this": [
     "Yay! You did it!",
     ],
-}
+};

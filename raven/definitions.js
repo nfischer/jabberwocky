@@ -1,5 +1,3 @@
-'use strict';
-
 var defs = {
   "surcease": [
     "To cease from some action; desist.",
@@ -43,4 +41,4 @@ var defs = {
   "balm in gilead": "\"Balm of Gilead\" is a soothing ointment made in Gilead, a mountainous region of Palestine east of the Jordan river.",
   "aidenn": "Eden or paradise.",
   "pallid": "Pale, typically because of poor health.",
-}
+};

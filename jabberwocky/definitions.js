@@ -1,5 +1,3 @@
-'use strict';
-
 var defs = {
   "slithy": [
     "Combining the senses of \"slimy\" and \"lithe\"",
@@ -55,16 +53,15 @@ var defs = {
   "burble": "To make vocalized bubbles with the mouth",
   "snicker-snack": "Onomatopoeia used to describe the sound of a sword cutting into something",
   "galumph": "To gallop triumphantly",
-  "beamish": "Beaming",
+  "beamish": [ "Beaming", "Filled with happiness, optimism, or anticipation" ],
   "frabjous": "Fabulous to the point of causing great happiness",
   "callooh": "Expression of happiness",
   "callay": "Expression of happiness",
   "chortled": "To chuckle happily while making joyous exclamations",
-  "beamish": "Filled with happiness, optimism, or anticipation",
   "whiffling": "Moving lightly as if blown by a puff of air",
   "galumphing": "Moving in a clumsy, ponderous, or noisy manner.",
   "burbled": [
     "Make a continuous murmuring noise.",
     "Speak in an unintelligible or silly way, typically at unnecessary length.",
     ],
-}
+};

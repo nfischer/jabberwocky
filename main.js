@@ -1,4 +1,5 @@
 function advanceDefinition(arg) {
+  'use strict';
   var node = $(arg);
   var text = node.text().toLowerCase();
   if (defs[text] instanceof Array) {
@@ -10,6 +11,7 @@ function advanceDefinition(arg) {
   }
 }
 $(document).ready(function () {
+  'use strict';
   // make all keys lowercase
   for (var k in defs) {
     if (defs.hasOwnProperty(k)) {
