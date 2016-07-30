@@ -1,9 +1,12 @@
 var rightArrow = ' \u21AA';
+function isPlural(arg) {
+  return arg instanceof Array && arg.length > 1;
+}
 function advanceDefinition(arg) {
   'use strict';
   var node = $(arg);
   var text = node.text().toLowerCase();
-  if (defs[text] instanceof Array) {
+  if (isPlural(defs[text])) {
     var count = parseInt(node.attr('data-count'));
     count = (count + 1) % defs[text].length;
     var newHint = defs[text][count];
@@ -31,7 +34,7 @@ $(document).ready(function () {
       node.attr('onclick', 'advanceDefinition(this)');
       node.addClass('hint--bounce hint--bottom hint--medium');
       node.attr('data-count', '0');
-      if (defs[text] instanceof Array) {
+      if (isPlural(defs[text])) {
         node.attr('aria-label', defs[text][0] + rightArrow);
       } else {
         node.attr('aria-label', defs[text]);
