@@ -15,7 +15,7 @@ var defs = {
     ],
   "pallas": [
     "The goddess of wisdom in Greek mythology.",
-    "Also known as Athena, wife of Zeus.",
+    "Also known as Athena, daughter of Zeus.",
     ],
   "beguiling": [
     "Charm or enchant, sometimes in a deceptive way.",
