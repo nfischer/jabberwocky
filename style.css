@@ -13,7 +13,8 @@ h2 {
   font-size: 30pt;
   text-align: center;
 }
-#citation {
+#citation,#home-link {
+  text-align: center;
   font-size: 16pt;
   font-style: italic;
 }
