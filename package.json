@@ -4,6 +4,7 @@
   "description": "A collection of interactive poetry",
   "main": "main.js",
   "scripts": {
+    "start": "opener http://127.0.0.1:8080 && http-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "jshint .",
     "deploy": "deploy-gh"
@@ -27,6 +28,8 @@
   "homepage": "https://github.com/nfischer/jabberwocky#readme",
   "devDependencies": {
     "deploy-gh": "^0.1.0",
-    "jshint": "^2.9.2"
+    "http-server": "^0.9.0",
+    "jshint": "^2.9.2",
+    "opener": "^1.4.1"
   }
 }
